@@ -15,5 +15,17 @@ function getComputerChoice(){
     }
 
 }
-
+function getHumanChoice(){
+    let choice = parseInt(prompt('Enter rock, paper or scissors: '))
+    if (choice == 0){
+        return 'rock';
+    }
+    else if (choice == 1){
+        return 'paper'
+    }
+    else{
+        return 'scissors'
+    }
+}
 console.log(getComputerChoice())
+console.log(getHumanChoice())
